@@ -7,4 +7,3 @@ def g(c):
     return sum(c)
 
 print(c)
-
