@@ -1,14 +1,9 @@
-# Import the library
-
-import matplotlib.pyplot as plt
-%matplotlib inline  
-
 #Task-1. You are tasked with creating a Python program to
 # represent vehicles using a class. Each car should have attributes 
 # for maximum speed and mileage.
 
 class Vehicle(object):
-    def __init__(self, max_speed, mileage)
+    def __init__(self, max_speed, mileage):
         self.max_speed = max_speed
         self.mileage = mileage
 
@@ -17,7 +12,7 @@ class Vehicle(object):
 class Vehicle(object):
     color = "white"
 
-    def __init__(self, max_speed, mileage)
+    def __init__(self, max_speed, mileage):
         self.max_speed = max_speed
         self.mileage = mileage
 
@@ -27,7 +22,7 @@ class Vehicle(object):
 class Vehicle(object):
     color = "white"
 
-    def __init__(self, max_speed, mileage)
+    def __init__(self, max_speed, mileage):
         self.max_speed = max_speed
         self.mileage = mileage
 
@@ -38,7 +33,7 @@ class Vehicle(object):
 class Vehicle(object):
     color = "white"
 
-    def __init__(self, max_speed, mileage)
+    def __init__(self, max_speed, mileage):
         self.max_speed = max_speed
         self.mileage = mileage
 
