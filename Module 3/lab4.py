@@ -59,3 +59,42 @@ vehicle_1.displayproperties()
 vehicle_2 = Vehicle(180, 75000)
 vehicle_2.assign_seating_capacity(4)
 vehicle_2.displayproperties()
+
+# You have been recruited by your friend, a linguistics enthusiast, 
+# to create a utility tool that can perform analysis on a given piece of text
+
+class analysedText(object):
+    
+    def __init__ (self, text):
+
+        # TODO: Remove the punctuation from <text> and make it lower case.
+        fmtText = text.lower().replace(".", "").replace("!", "").replace(",","").replace("?", "")
+
+        # TODO: Assign the formatted text to a new attribute called "fmtText"
+        self.fmtText = fmtText
+
+        pass 
+    
+    def freqAll(self):    
+
+        # TODO: Split the text into a list of words  
+        wordList = self.fmtText.split(" ")
+
+        # TODO: Create a dictionary with the unique words in the text as keys
+        # and the number of times they occur in the text as values
+        freqMap = {} 
+
+        for word in set(wordList): # use set to remove duplicates in list
+            freqMap[word] = wordList.count(word)
+
+        return freqMap # return the created dictionary
+    
+    def freqOf(self, word):
+
+        # TODO: return the number of occurrences of <word> in <fmtText>
+        freqDict = self.freqAll()
+
+        if word in freqDict:
+            return freqDict[word]
+        else:
+            return 0
