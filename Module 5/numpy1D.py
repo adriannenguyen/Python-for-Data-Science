@@ -13,3 +13,6 @@ print(x.dtype)
 
 # Find the mean of the array:
 print(x.mean())
+
+print(np.array([1,-1])*np.array([1,1]))
+print(np.dot(np.array([1,-1]),np.array([1,1])))
