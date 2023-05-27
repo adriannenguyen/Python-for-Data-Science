@@ -103,4 +103,43 @@ b = np.array([1, 1])
 Plotvec2(a, b)
 print("The dot product is", np.dot(a,b))
 
-#
+# Convert the list [1, 0] and [0, 1] to numpy arrays a and b. 
+# Then, plot the arrays as vectors using the function Plotvec2 and find their dot product:
+
+a = np.array([1, 0])
+b = np.array([0, 1])
+Plotvec2(a, b)
+print("The dot product is", np.dot(a,b))
+
+# Convert the list [1, 1] and [0, 1] to numpy arrays a and b. 
+# Then plot the arrays as vectors using the fuction Plotvec2 and find their dot product:
+
+a = np.array([1, 1])
+b = np.array([0, 1])
+Plotvec2(a, b)
+print("The dot product is", np.dot(a,b))
+
+# Why are the results of the dot product for [-1, 1] and [1, 1] and the dot product for [1, 0] and [0, 1] zero, 
+# but not zero for the dot product for [1, 1] and [0, 1]?
+# The vectors used for question 4 and 5 are perpendicular. As a result, the dot product is zero.
+
+# Convert the list [1, 2, 3] and [8, 9, 10] to numpy arrays arr1 and arr2. 
+# Then perform Addition , Subtraction , Multiplication , Division and Dot Operation on the arr1 and arr2.
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([8, 9, 10])
+
+arr3 = np.add(arr1, arr2)
+arr4 = np.subtract(arr1, arr2)
+arr5 = np.multiply(arr1, arr2)
+arr6 = np.divide(arr1, arr2)
+arr7 = np.dot(arr1, arr2)
+
+# Convert the list [1, 2, 3, 4, 5] and [6, 7, 8, 9, 10] to numpy arrays arr1 and arr2. 
+# Then find the even and odd numbers from arr1 and arr2.
+arr1 = np.array([1, 2, 3, 4, 5])
+arr2 = np.array([6, 7, 8, 9, 10])
+
+even_arr1 = arr1[1:5:2]
+odd_arr1= arr1[0:5:2]
+even_arr2 = arr2[0:5:2]
+odd_arr2 = arr2[1:5:2]
