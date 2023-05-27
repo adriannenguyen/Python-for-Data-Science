@@ -58,3 +58,49 @@ np.dot(arr1, arr2)
 # Add Constant 5 to the given numpy array ar:
 arr = np.array([1, 2, 3, -1]) 
 arr + 5
+
+# Make a numpy array within [5, 4] and 6 elements
+np.linspace(5, 4, num=6)
+
+# Implement the following vector subtraction in numpy: u-v
+u = np.array([1, 0])
+v = np.array([0, 1])
+
+u-v
+
+# Multiply the numpy array z with -2:
+z = np.array([2, 4])
+
+z*-2
+
+# Consider the list [1, 2, 3, 4, 5] and [1, 0, 1, 0, 1]. 
+# Cast both lists to a numpy array then multiply them together:
+a = np.array([1, 2, 3, 4, 5])
+b = np.array([1, 0, 1, 0, 1])
+
+a*b
+
+# Convert the list [-1, 1] and [1, 1] to numpy arrays a and b. 
+# Then, plot the arrays as vectors using the fuction Plotvec2 and find their dot product:
+import time 
+import sys
+import numpy as np 
+
+import matplotlib.pyplot as plt
+%matplotlib inline  
+
+def Plotvec2(a,b):
+    ax = plt.axes()# to generate the full window axes
+    ax.arrow(0, 0, *a, head_width=0.05, color ='r', head_length=0.1)#Add an arrow to the  a Axes with arrow head width 0.05, color red and arrow head length 0.1
+    plt.text(*(a + 0.1), 'a')
+    ax.arrow(0, 0, *b, head_width=0.05, color ='b', head_length=0.1)#Add an arrow to the  b Axes with arrow head width 0.05, color blue and arrow head length 0.1
+    plt.text(*(b + 0.1), 'b')
+    plt.ylim(-2, 2)#set the ylim to bottom(-2), top(2)
+    plt.xlim(-2, 2)#set the xlim to left(-2), right(2)
+
+a = np.array([-1, 1])
+b = np.array([1, 1])
+Plotvec2(a, b)
+print("The dot product is", np.dot(a,b))
+
+#
